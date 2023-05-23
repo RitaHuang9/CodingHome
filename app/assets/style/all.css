@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply py-2 px-8 rounded-lg text-lg
+    }
+
+    .btn-gradient{
+        @apply bg-gradient-to-br from-primary-blue to-primary-green text-white hover:bg-none hover:ring-1 hover:ring-primary-green
+    }
+
+    .btn-outline{
+        @apply  ring-1 ring-white text-white hover:bg-white  hover:text-black
+    }
+
+}
+
+/* header */
+.c-border{
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #09abf6 50%, #62db54 50%);
+}
+
+
+@media (min-width: 640px){
+    .header-logo{
+        content: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo.svg");
+    }
+}
+
+
+/* index */
+
+.banner-index{
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home_mobile.jpg?raw=true") center center no-repeat;
+    height: 336px;
+    background-size: cover;
+}
+
+
+
+.swiper-button-next:after, 
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, 
+.swiper-rtl .swiper-button-next:after{
+    content:"";
+}
+
+
+
+.swiper-button-next, 
+.swiper-button-prev{
+    color: #62db54;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -32px;
+}
+
+.swiper-pagination-bullet-active{
+    background:#62db54;
+    width: 16px;
+    border-radius: 5px;
+}
+
+.swiper-pagination-bullet{
+    background:#62db54;
+    opacity: 1;
+}
+
+@media (min-width: 1024px){
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: -9px;
+    }
+}
+
+
+@media (min-width: 640px){
+    .banner-index{
+        background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true") center center no-repeat;
+        height: 680px;
+        background-size: cover;
+    }
+}
+
