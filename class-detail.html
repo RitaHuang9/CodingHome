@@ -1,10 +1,62 @@
----
-title: 課程詳細資訊
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    課程詳細資訊
+  </title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico"/>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="bg-body-dark overflow-x-hidden">
+  <header class="sticky top-0 z-50 bg-c-gray-900">
+    <div class="container mx-auto flex justify-between items-center py-6 relative">
+      <a href="./index.html">
+        <img class="header-logo w-6 sm:w-[175px] "
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo2.svg"
+          alt="logo">
+      </a>
+      <div>
+        <!-- 網頁版選單 -->
+        <ul class="hidden text-white text-lg sm:flex">
+          <li class="pl-[50px]"><a href="index.html">首頁</a></li>
+          <li class="pl-[50px]"><a href="class.html">課程介紹</a></li>
+          <li class="pl-[50px]">
+            <a href="" class="flex items-center justify-center">
+              <span class="material-icons text-white">account_circle</span>
+              登入</a>
+          </li>
+        </ul>
+        <!-- 漢堡 -->
+        <span class="js-burger leading-8 material-symbols-outlined text-primary-green sm:hidden">
+          drag_handle
+        </span>
+      </div>
+      <!-- 手機版選單 -->
+      <ul
+        class="js-menu-mobile hidden z-10 bg-c-gray-900 mobile-menu w-full absolute top-[78px] left-0 px-5 py-2 text-lg text-white text-center">
+        <li class="py-2.5"><a href="index.html">首頁</a></li>
+        <li class="py-2.5"><a href="class.html">課程介紹</a></li>
+        <li class="py-2.5">
+          <a href="" class="flex items-center justify-center">
+            <span class="material-icons text-white">account_circle</span>
+            登入</a>
+        </li>
+      </ul>
+    </div>
+    <div class="c-border"></div>
+  </header>
+
+  
 <section data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000" class="container mx-auto my-[82px] lg:flex lg:justify-between">
     <div class="lg:w-4/6 lg:mr-6">
         <div class=" lg:float-right lg:w-11/12">
@@ -279,3 +331,17 @@ current: index
         </ul>
     </div>
 </section>
+
+    <footer class="py-6 bg-c-gray-800">
+      <p class="text-c-gray-700 leading-[19px] text-center">Coding Home © 2022 All Rights Reserved</p>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
